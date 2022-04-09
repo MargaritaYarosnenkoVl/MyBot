@@ -33,4 +33,4 @@ class Convertor:
         resp = json.loads(r.content)
         new_price = resp['rates'][base_key] * float(amount)
 
-        return round(new_price, 3)
+        return round(new_price, 2)
